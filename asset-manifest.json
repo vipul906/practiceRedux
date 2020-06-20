@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/practiceRedux/static/css/main.d1552f98.chunk.css",
+    "main.js": "/practiceRedux/static/js/main.1e4b56c9.chunk.js",
+    "main.js.map": "/practiceRedux/static/js/main.1e4b56c9.chunk.js.map",
+    "runtime-main.js": "/practiceRedux/static/js/runtime-main.3ca96312.js",
+    "runtime-main.js.map": "/practiceRedux/static/js/runtime-main.3ca96312.js.map",
+    "static/js/2.04ddb886.chunk.js": "/practiceRedux/static/js/2.04ddb886.chunk.js",
+    "static/js/2.04ddb886.chunk.js.map": "/practiceRedux/static/js/2.04ddb886.chunk.js.map",
+    "index.html": "/practiceRedux/index.html",
+    "precache-manifest.e86464cecd1e5927dba709c20c9e961b.js": "/practiceRedux/precache-manifest.e86464cecd1e5927dba709c20c9e961b.js",
+    "service-worker.js": "/practiceRedux/service-worker.js",
+    "static/css/main.d1552f98.chunk.css.map": "/practiceRedux/static/css/main.d1552f98.chunk.css.map",
+    "static/js/2.04ddb886.chunk.js.LICENSE.txt": "/practiceRedux/static/js/2.04ddb886.chunk.js.LICENSE.txt",
+    "static/media/101_1.jpg": "/practiceRedux/static/media/101_1.b5714b6a.jpg",
+    "static/media/101_2.jpg": "/practiceRedux/static/media/101_2.9b698d6d.jpg",
+    "static/media/102_1.jpg": "/practiceRedux/static/media/102_1.b618b5fc.jpg",
+    "static/media/103_1.jpg": "/practiceRedux/static/media/103_1.df97d7c2.jpg",
+    "static/media/104_1.jpg": "/practiceRedux/static/media/104_1.843a4713.jpg",
+    "static/media/105_1.jpg": "/practiceRedux/static/media/105_1.45a051e0.jpg",
+    "static/media/106_1.jpg": "/practiceRedux/static/media/106_1.87b5353e.jpg",
+    "static/media/107_1.jpg": "/practiceRedux/static/media/107_1.59b64365.jpg",
+    "static/media/108_1.jpg": "/practiceRedux/static/media/108_1.2e62289b.jpg",
+    "static/media/109_1.jpg": "/practiceRedux/static/media/109_1.54fbf816.jpg",
+    "static/media/110_1.jpg": "/practiceRedux/static/media/110_1.0d941b4c.jpg",
+    "static/media/111_1.jpg": "/practiceRedux/static/media/111_1.84c82a5a.jpg",
+    "static/media/112_1.jpg": "/practiceRedux/static/media/112_1.06ec2c62.jpg",
+    "static/media/113_1.jpg": "/practiceRedux/static/media/113_1.7faf6a31.jpg",
+    "static/media/114_1.jpg": "/practiceRedux/static/media/114_1.2995d79a.jpg",
+    "static/media/115_1.jpg": "/practiceRedux/static/media/115_1.d78e2790.jpg",
+    "static/media/116_1.jpg": "/practiceRedux/static/media/116_1.75f51cec.jpg",
+    "static/media/117_1.jpg": "/practiceRedux/static/media/117_1.4c799bac.jpg",
+    "static/media/118_1.jpg": "/practiceRedux/static/media/118_1.a313534c.jpg",
+    "static/media/119_1.jpg": "/practiceRedux/static/media/119_1.df947f14.jpg",
+    "static/media/cart.png": "/practiceRedux/static/media/cart.afce9b2f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ca96312.js",
+    "static/js/2.04ddb886.chunk.js",
+    "static/css/main.d1552f98.chunk.css",
+    "static/js/main.1e4b56c9.chunk.js"
+  ]
+}
