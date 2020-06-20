@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 
@@ -34,9 +34,9 @@ const store =
 function App() {
   return (
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
         <Route exact path="/" name="Dashboard" component={Dashboard} />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   );
 }
