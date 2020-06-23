@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "13db36cc762915bf24b807e1c4114859",
+    "revision": "ff760dc5f30d785ba54f9f64b9e2cddc",
     "url": "/practiceRedux/index.html"
   },
   {
-    "revision": "10bfd9316ec12104eb8b",
+    "revision": "319f0a55fa84d02f52eb",
     "url": "/practiceRedux/static/css/main.d1552f98.chunk.css"
   },
   {
-    "revision": "08dddb11e469c9d1d1f5",
-    "url": "/practiceRedux/static/js/2.4d9d9b38.chunk.js"
+    "revision": "fbe212787529f14158ee",
+    "url": "/practiceRedux/static/js/2.e808a7bb.chunk.js"
   },
   {
     "revision": "3adc01bea76e7956dc3633ee898f6936",
-    "url": "/practiceRedux/static/js/2.4d9d9b38.chunk.js.LICENSE.txt"
+    "url": "/practiceRedux/static/js/2.e808a7bb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "10bfd9316ec12104eb8b",
-    "url": "/practiceRedux/static/js/main.48cbd9e6.chunk.js"
+    "revision": "319f0a55fa84d02f52eb",
+    "url": "/practiceRedux/static/js/main.12399f5a.chunk.js"
   },
   {
     "revision": "51ba40b0053990f0d994",
