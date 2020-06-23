@@ -34,7 +34,7 @@ const store =
 function App() {
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename="practiceRedux">
         <Route exact path="/" name="Dashboard" component={Dashboard} />
       </BrowserRouter>
     </Provider>
