@@ -34,9 +34,9 @@ const store =
 function App() {
   return (
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
         <Route exact path="/" name="Dashboard" component={Dashboard} />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   );
 }

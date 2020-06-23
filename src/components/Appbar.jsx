@@ -30,26 +30,24 @@ function PrimarySearchAppBar(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.grow}>
-      <AppBar style={{ position: "fixed", backgroundColor: "#000000" }}>
-        <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            onClick={props.backToHome}
-            color="inherit"
-            aria-label="home">
-            <HomeIcon />
-          </IconButton>
+    <AppBar style={{ position: "fixed", backgroundColor: "#000000" }}>
+      <Toolbar>
+        <IconButton
+          edge="start"
+          className={classes.menuButton}
+          onClick={props.backToHome}
+          color="inherit"
+          aria-label="home">
+          <HomeIcon />
+        </IconButton>
 
-          <Typography className={classes.title} variant="h6" noWrap>
-            Shopper's Cart
-          </Typography>
+        <Typography className={classes.title} variant="h6" noWrap>
+          Shopper's Cart
+        </Typography>
 
-          <UserCart />
-        </Toolbar>
-      </AppBar>
-    </div>
+        <UserCart />
+      </Toolbar>
+    </AppBar>
   );
 }
 

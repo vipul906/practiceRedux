@@ -19,14 +19,12 @@ class FabIcon extends Component {
         }
       }
     }
-    //this.props.user.product_list = this.state.newProductList;
     this.props.productList(tmp);
   }
   render() {
     return (
       <Fab
         size="small"
-        // style={{ marginTop: "-102px" }}
         onClick={(size) => this.handleClick(size, this.props.value)}>
         {this.props.value}
       </Fab>

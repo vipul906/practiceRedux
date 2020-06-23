@@ -10,14 +10,26 @@ import FabIcon from "./FabIcon";
 import { addtoCart, productList } from "../containers/actions/userActions";
 import FormControl from "@material-ui/core/FormControl";
 import NativeSelect from "@material-ui/core/NativeSelect";
+import IconButton from "@material-ui/core/IconButton";
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
+import SortIcon from "@material-ui/icons/Sort";
 
 class Dashboard extends Component {
   state = {
     newProductList: ProductStub,
+    anchorEl: null,
+  };
+  ITEM_HEIGHT = 48;
+
+  //const [anchorEl, setAnchorEl] = React.useState(null);
+
+  handleClick = (event) => {
+    this.setState({ anchorEl: event.currentTarget });
   };
 
-  handleChange = (event) => {
-    event.target.value === "D" ? this.sortByPriceDes() : this.sortByPriceAsc();
+  handleClose = () => {
+    this.setState({ anchorEl: null });
   };
 
   sortByPriceDes = () => {
@@ -35,6 +47,7 @@ class Dashboard extends Component {
       }
     }
     this.props.productList(newProductList);
+    this.setState({ anchorEl: null });
   };
   sortByPriceAsc = () => {
     let newProductList = this.props.user.product_list;
@@ -51,59 +64,65 @@ class Dashboard extends Component {
       }
     }
     this.props.productList(newProductList);
+    this.setState({ anchorEl: null });
   };
   render() {
+    let open = Boolean(this.state.anchorEl);
+
     return (
       <div>
-        <Appbar />
-        <Grid
-          container
-          spacing={2}
-          style={{
-            marginTop: 80,
-            display: "flex",
-            justifyContent: "space-between",
-          }}>
-          <div style={{ width: "auto%", marginBottom: "10px" }}>
+        <div style={{ height: "5rem" }}>
+          <Appbar />
+        </div>
+        <Grid container spacing={1}>
+          <div style={{ width: "100%", display: "flex" }}>
+            <Grid item>Sizes:&nbsp;&nbsp;</Grid>
+
+            <Grid item xs={6}>
+              {/* <Grid>Sizes:&nbsp;&nbsp;</Grid> */}
+              <FabIcon value={"S"} />
+              <FabIcon value={"M"} />
+              <FabIcon value={"L"} />
+              <FabIcon value={"ML"} />
+              <FabIcon value={"XS"} />
+              <FabIcon value={"XL"} />
+              <FabIcon value={"XXl"} />
+            </Grid>
             <Grid
-              container
+              item
+              xs={6}
+              // sm={3}
               style={{
                 display: "flex",
                 flexDirection: "row",
-                alignItems: "baseline",
+                justifyContent: "flex-end",
+                // alignItems: "center",
               }}>
-              <Grid>Sizes:&nbsp;&nbsp;</Grid>
-              <Grid item xs={6}>
-                <FabIcon value={"XS"} />
-                <FabIcon value={"S"} />
-                <FabIcon value={"M"} />
-                <FabIcon value={"ML"} />
-              </Grid>
-              <Grid item xs={6} style={{ textAlign: "end" }}>
-                <FabIcon value={"L"} />
-                <FabIcon value={"XL"} />
-                <FabIcon value={"XXL"} />
-              </Grid>
+              {" "}
+              <IconButton onClick={this.handleClick}>
+                <SortIcon />
+              </IconButton>
+              <Menu
+                id="long-menu"
+                anchorEl={this.state.anchorEl}
+                keepMounted
+                open={open}
+                onClose={this.handleClose}
+                PaperProps={{
+                  style: {
+                    maxHeight: this.ITEM_HEIGHT * 4.5,
+                    width: "25ch",
+                  },
+                }}>
+                <MenuItem onClick={this.sortByPriceDes}>
+                  Highest to Lowest
+                </MenuItem>
+                <MenuItem onClick={this.sortByPriceAsc}>
+                  Lowest to Highest
+                </MenuItem>
+              </Menu>
             </Grid>
           </div>
-          <Grid
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "flex-end",
-              // alignItems: "center",
-            }}>
-            <FormControl>
-              <InputLabel htmlFor="demo-customized-select-native">
-                Filter
-              </InputLabel>
-              <NativeSelect onChange={this.handleChange}>
-                <option aria-label="None" value="" />
-                <option value="D">Highest to Lowest</option>
-                <option value="A">Lowest to Highest</option>
-              </NativeSelect>
-            </FormControl>
-          </Grid>
           <Grid container spacing={1}>
             {this.props.user.product_list.map((product, index) =>
               product ? (

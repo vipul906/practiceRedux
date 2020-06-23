@@ -27,7 +27,7 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
   media: {
-    height: 400,
+    height: "30rem",
   },
 });
 
@@ -59,7 +59,7 @@ function MediaCard(props) {
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
-            style={{ width: "16rem", margin: "auto" }}
+            style={{ margin: "auto" }}
             className={classes.media}
             image={require("../assets" + props.product.src_1)}
           />
